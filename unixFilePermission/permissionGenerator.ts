@@ -1,7 +1,9 @@
 //permissions
 //r=read, w=write, x=execute
 
-const badPermissionError = new Error("invalid permission number");
+const badPermissionError = new Error(
+  "invalid permission number, permission integer exist from (0 to 7)"
+);
 badPermissionError.name = "badPermissionError";
 
 function generatePermissionString(n: number) {
@@ -17,7 +19,7 @@ function generatePermissionString(n: number) {
   }
 }
 export function generatepermission(n: number) {
-  if (n > 7) {
+  if (n > 7 || n < 0 || !Number.isInteger(n)) {
     throw badPermissionError;
   }
 

@@ -1,10 +1,10 @@
-import { generatepermission } from "./permissionGenerator";
+import { generatePermission } from "./permissionGenerator";
 
-console.log(generatepermission(0)); //---
-console.log(generatepermission(1)); //--x
-console.log(generatepermission(2)); //-w-
-console.log(generatepermission(3)); //-wx
-console.log(generatepermission(4)); //r--
-console.log(generatepermission(5)); //r-x
-console.log(generatepermission(6)); //rw-
-console.log(generatepermission(7)); //rwx
+console.log(generatePermission(0)); //---
+console.log(generatePermission(1)); //--x
+console.log(generatePermission(2)); //-w-
+console.log(generatePermission(3)); //-wx
+console.log(generatePermission(4)); //r--
+console.log(generatePermission(5)); //r-x
+console.log(generatePermission(6)); //rw-
+console.log(generatePermission(7)); //rwx

@@ -18,7 +18,7 @@ function generatePermissionString(n: number) {
       return "-";
   }
 }
-export function generatepermission(n: number) {
+export function generatePermission(n: number) {
   if (n > 7 || n < 0 || !Number.isInteger(n)) {
     throw badPermissionError;
   }

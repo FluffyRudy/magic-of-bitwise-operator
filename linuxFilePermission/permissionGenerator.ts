@@ -1,6 +1,9 @@
 //permissions
 //r=read, w=write, x=execute
 
+const badPermissionError = new Error("invalid permission number");
+badPermissionError.name = "badPermissionError";
+
 function generatePermissionString(n: number) {
   switch (n) {
     case 4:
@@ -14,6 +17,10 @@ function generatePermissionString(n: number) {
   }
 }
 export function generatepermission(n: number) {
+  if (n > 7) {
+    throw badPermissionError;
+  }
+
   let permission = "";
 
   permission += generatePermissionString(n & 4); //for read

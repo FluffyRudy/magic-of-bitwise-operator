@@ -1,5 +1,5 @@
 # magic-of-bitwise-operator
-Repository consisting of some simple but powerful bitwise operation
+Repository consisting of some simple but powerful bitwise operation (demo example , pratical are far complex)
 
 ## Directories
  - **bitCounter**: counts number of binary bits in given decimal number
